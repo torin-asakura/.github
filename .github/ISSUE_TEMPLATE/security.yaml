@@ -1,0 +1,92 @@
+name: Security
+description: Внутренние security-задачи без публикации секретов и приватных деталей
+title: '[Security] '
+type: 'OPS'
+projects: ['torin-asakura/6']
+assignees:
+  - TorinAsakura
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Эта форма используется только для внутренних security-задач с редактированными данными.
+        Не публикуй живые секреты, приватные scan reports и детали незакрытых уязвимостей в публичном issue.
+
+  - type: dropdown
+    id: finding-source
+    attributes:
+      label: Источник finding
+      options:
+        - Dependabot
+        - CodeQL
+        - Container scan
+        - Secret scan
+        - Manual review
+        - Incident follow-up
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: affected-target
+    attributes:
+      label: Затронутый репозиторий или образ
+      placeholder: 'Например: torin-asakura/workspace или ghcr.io/torin-asakura/workspace:1.2.3'
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Контур
+      options:
+        - Production
+        - Stage
+        - Development
+        - CI
+        - Local
+        - Shared infrastructure
+        - Unknown
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+        - Informational
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Доказательство скана или воспроизведения
+      description: Не публикуй секреты, токены, приватные scan reports и детали незакрытой уязвимости. Приложи только редактированное доказательство или ссылку на закрытый канал.
+      placeholder: |
+        Приложи редактированную ссылку на scan report, CVE, alert, лог или шаги воспроизведения.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-state
+    attributes:
+      label: Ожидаемое состояние
+      placeholder: |
+        Опиши, что должно измениться: устранена уязвимость, секрет ротирован, правило усилено, finding закрыт.
+    validations:
+      required: true
+
+  - type: textarea
+    id: verification-artifacts
+    attributes:
+      label: Артефакты проверки
+      placeholder: |
+        Повторный scan report, ссылка на CI, вывод команды, скриншот или другой артефакт, подтверждающий исправление.
+    validations:
+      required: true
