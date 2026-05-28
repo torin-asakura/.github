@@ -1,0 +1,38 @@
+name: Product
+description: Продуктовые таски
+title: '[Product] '
+type: 'Product'
+assignees:
+  - TorinAsakura
+body:
+  - type: input
+    id: motivation
+    attributes:
+      label: Что делаем?
+      description: "Например: чат-бота, админ-панель, API"
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Что входит в объём задачи?
+      description: "Перечисли основные фичи"
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Требования
+      description: "Перечисли требования, которым должен соответствовать конечный результат"
+    validations:
+      required: true
+
+  - type: textarea
+    id: results
+    attributes:
+      label: Ожидаемый результат
+      description: "Коротко перечисли, что конкретно будет на выходе (артефакты, данные, функционал)"
+    validations:
+      required: false
