@@ -1,0 +1,34 @@
+name: OPS
+description: Operations Tasks
+title: "[OPS] "
+projects: ["torin-asakura/6"]
+type: OPS
+assignees:
+  - TorinAsakura
+body:
+  - type: dropdown
+    id: infra_segment
+    attributes:
+      label: Сегмент инфраструктуры
+      options:
+        - GitHub
+        - Pipelines
+        - Kubernetes
+        - Infra (PSQL, Pub/Sub, other)
+        - MLOps
+        - IaC (Terraform, Ansible)
+        - GitOps (FluxCD)
+        - Networking (Calico, CNI)
+        - Observability (Prometheus, Loki, Tempo, Grafana)
+        - Security (RBAC, Secrets mgmt)
+        - Storage (S3, GCS, PVC)
+    validations:
+      required: true
+
+  - type: textarea
+    id: specs
+    attributes:
+      label: Что делаем?
+      placeholder: Коротко опиши задачу и требуемое состояние
+    validations:
+      required: true
