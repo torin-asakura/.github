@@ -1,0 +1,34 @@
+name: Epic
+description: Крупная инициатива, которая ведётся через нативные связи с дочерними задачами
+title: '[Epic] '
+type: 'Epic'
+assignees:
+  - TorinAsakura
+body:
+  - type: input
+    id: motivation
+    attributes:
+      label: С чем связан эпик?
+      placeholder: Какая цель, проблема или ограничение заставляет делать этот эпик
+    validations:
+      required: true
+
+  - type: textarea
+    id: target-state
+    attributes:
+      label: Целевое состояние
+      placeholder: Что должно стать правдой после завершения эпика
+    validations:
+      required: true
+
+  - type: textarea
+    id: dod
+    attributes:
+      label: Критерии готовности эпика
+      placeholder: |
+        - Целевое состояние достигнуто
+        - Все актуальные дочерние задачи закрыты или явно вынесены из эпика
+        - Нативные зависимости закрыты или больше не блокируют работу
+        - Документация или релизные заметки обновлены, если это нужно
+    validations:
+      required: true
