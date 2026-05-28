@@ -1,0 +1,29 @@
+name: Dependencies
+description: Обновление зависимостей
+title: '[Dependencies] '
+type: 'Task'
+labels:
+  - dependencies
+assignees:
+  - TorinAsakura
+body:
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Какие зависимости обновляем?
+      placeholder: |
+        - [ ] #12
+        - [ ] #13
+        - [ ] #14
+    validations:
+      required: true
+
+  - type: textarea
+    id: blockers
+    attributes:
+      label: Что блокирует обновление?
+      placeholder: |
+        Для #12 нужно обновить node 12 -> 14.
+        Изменения в #14 не имеют обратной совместимости, нужен ресёч и рефактор.
+    validations:
+      required: false
