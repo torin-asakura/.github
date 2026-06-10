@@ -2,8 +2,6 @@ name: Dependencies
 description: Обновление зависимостей
 title: '[Dependencies] '
 type: 'Task'
-labels:
-  - dependencies
 assignees:
   - TorinAsakura
 body:
