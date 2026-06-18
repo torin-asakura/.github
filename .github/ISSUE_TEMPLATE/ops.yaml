@@ -1,8 +1,8 @@
 name: OPS
 description: Operations Tasks
 title: "[OPS] "
-projects: ["torin-asakura/6"]
 type: OPS
+projects: ["torin-asakura/6"]
 assignees:
   - TorinAsakura
 body:
