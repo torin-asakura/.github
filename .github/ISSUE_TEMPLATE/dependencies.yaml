@@ -1,7 +1,7 @@
 name: Dependencies
 description: Обновление зависимостей
 title: '[Dependencies] '
-type: 'Task'
+type: 'Dependencies'
 assignees:
   - TorinAsakura
 body:
