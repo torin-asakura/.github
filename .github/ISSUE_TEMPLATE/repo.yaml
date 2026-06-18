@@ -1,8 +1,8 @@
 name: Repo
 description: Создание репозитория
 title: '[Repo] '
+type: 'Repo'
 projects: ["torin-asakura/6"]
-type: 'Task'
 assignees:
   - TorinAsakura
 body:
