@@ -9,7 +9,7 @@ body:
     id: motivation
     attributes:
       label: Что делаем?
-      description: "Например: чат-бота, админ-панель, API"
+      description: 'Например: чат-бота, админ-панель, API'
     validations:
       required: true
 
@@ -17,7 +17,7 @@ body:
     id: scope
     attributes:
       label: Что входит в объём задачи?
-      description: "Перечисли основные фичи"
+      description: 'Перечисли основные фичи'
     validations:
       required: true
 
@@ -25,7 +25,7 @@ body:
     id: requirements
     attributes:
       label: Требования
-      description: "Перечисли требования, которым должен соответствовать конечный результат"
+      description: 'Перечисли требования, которым должен соответствовать конечный результат'
     validations:
       required: true
 
@@ -33,6 +33,6 @@ body:
     id: results
     attributes:
       label: Ожидаемый результат
-      description: "Коротко перечисли, что конкретно будет на выходе (артефакты, данные, функционал)"
+      description: 'Коротко перечисли, что конкретно будет на выходе (артефакты, данные, функционал)'
     validations:
       required: false
