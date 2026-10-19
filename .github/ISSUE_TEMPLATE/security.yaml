@@ -2,7 +2,7 @@ name: Security
 description: Внутренние security-задачи без публикации секретов и приватных деталей
 title: '[Security] '
 type: 'OPS'
-projects: ['torin-asakura/6']
+projects: ['torin-asakura/15']
 assignees:
   - TorinAsakura
 body:
