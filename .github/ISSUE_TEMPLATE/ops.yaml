@@ -2,7 +2,7 @@ name: OPS
 description: Operations Tasks
 title: '[OPS] '
 type: OPS
-projects: ['torin-asakura/6']
+projects: ['torin-asakura/15']
 assignees:
   - TorinAsakura
 body:
